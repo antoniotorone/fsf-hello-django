@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-3#edgvxo3n84ja=4u%*9*wg4d3wo%c_eur_x4#!9wpowv&2z4!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ckz8780-django-app.herokuapp.com']
+ALLOWED_HOSTS = ['ckz8780-django-app.herokuapp.com', "localhost"]
 
 
 # Application definition
@@ -77,16 +77,16 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
 # DATABASES = {
-#         'default': dj_database_url.parse("postgres://wctrvjxhsmnluv:40a4b1808398c9a1f7e7f7ac2416cb88ffae7f24d2a26de24037571eed252f06@ec2-18-209-153-180.compute-1.amazonaws.com:5432/d77r8tfo309js8")
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
 # }
+
+DATABASES = {
+        'default': dj_database_url.parse("postgres://vrcskkpcxicyse:27eac2bcd24fe5351801a68a17afe29086ee5fb8bbd7a2cbc7df784000a3cb08@ec2-18-211-41-246.compute-1.amazonaws.com:5432/dfestu5fihnd28")
+}
 
 
 # Password validation
