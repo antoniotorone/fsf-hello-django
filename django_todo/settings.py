@@ -84,11 +84,9 @@ DATABASES = {
     }
 }
 
-
-DATABASES = {
-    'default': dj_database_url.parse("postgres://wctrvjxhsmnluv:40a4b1808398c9a1f7e7f7ac2416cb88ffae7f24d2a26de24037571eed252f06@ec2-18-209-153-180.compute-1.amazonaws.com:5432/d77r8tfo309js8")
-}
-
+# DATABASES = {
+#         'default': dj_database_url.parse("postgres://wctrvjxhsmnluv:40a4b1808398c9a1f7e7f7ac2416cb88ffae7f24d2a26de24037571eed252f06@ec2-18-209-153-180.compute-1.amazonaws.com:5432/d77r8tfo309js8")
+# }
 
 
 # Password validation
